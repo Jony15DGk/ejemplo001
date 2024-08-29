@@ -1,6 +1,9 @@
 class Padre
+    def initialize (nombre)
+        @nombre = nombre
+    end
     def say_hello
-        puts "Holan desde #{self}"
+         "Hola desde #{@nombre}#{self}"
     end
 end
 
@@ -9,7 +12,7 @@ end
 
 
 saluda1 = Padre.new
-saluda1.say_hello
+puts saluda1.say_hello
 
 saluda2 = Hijo.new
 puts saluda2.say_hello
